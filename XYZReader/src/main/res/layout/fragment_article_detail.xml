@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fitsSystemWindows="true"
     tools:ignore="MergeRoomFrame">
 
     <android.support.design.widget.AppBarLayout
@@ -11,12 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
+        android:elevation="4dp"
         >
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
             app:expandedTitleMargin="16dp"
             app:expandedTitleMarginBottom="40dp"
             app:layout_scrollFlags="scroll"
@@ -25,13 +24,12 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fitsSystemWindows="true">
+                >
 
                 <ImageView
                     android:id="@+id/photo"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
                     tools:ignore="ContentDescription" />
 
@@ -123,7 +121,7 @@
         android:clickable="true"
         android:contentDescription="@string/action_share"
         android:src="@drawable/ic_share_black_24dp"
-        app:elevation="4dp"
+        app:elevation="6dp"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end" />
 
